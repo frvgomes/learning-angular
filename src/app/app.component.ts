@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `<app-title title="Olá Mundo"></app-title>, <router-outlet></router-outlet>`,
+  template: `
+  <app-data-bind></app-data-bind>,
+  <router-outlet></router-outlet>`,
 })
 export class AppComponent {
   title = 'learning-angular';
