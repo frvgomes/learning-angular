@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <app-data-bind></app-data-bind>,
+  <app-diretivas-estruturais></app-diretivas-estruturais>
   <router-outlet></router-outlet>`,
 })
 export class AppComponent {

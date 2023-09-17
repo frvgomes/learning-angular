@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { TitleComponent } from './title/title.component';
 import { DataBindComponent } from './data-bind/data-bind.component';
 import { FormsModule } from '@angular/forms';
+import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas-estruturais.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TitleComponent,
-    DataBindComponent
+    DataBindComponent,
+    DiretivasEstruturaisComponent
   ],
   imports: [
     BrowserModule,
