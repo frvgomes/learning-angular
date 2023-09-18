@@ -25,3 +25,12 @@
   </li>
 </ul>
 <button (click)="onClickAddList()">Clique</button>
+
+<hr>
+
+<input type="text" [(ngModel)]="cor">
+<div [ngSwitch]="cor">
+  <p *ngSwitchCase="'Azul'">Azul</p>
+  <p *ngSwitchCase="'Verde'">Verde</p>
+  <p *ngSwitchDefault>Nada consta</p>
+</div>

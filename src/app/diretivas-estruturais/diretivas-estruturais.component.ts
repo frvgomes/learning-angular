@@ -44,4 +44,6 @@ export class DiretivasEstruturaisComponent {
 
   }
 
+  public cor: string = "";
+
 }
