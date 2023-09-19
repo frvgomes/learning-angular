@@ -4,7 +4,13 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
   <!-- <app-diretivas-estruturais></app-diretivas-estruturais> -->
-  <app-diretivas-atributos></app-diretivas-atributos>
+  <!-- <app-diretivas-atributos>
+    <h1>Aula de Diretivas Atributos</h1>
+    <hr>
+  </app-diretivas-atributos> -->
+   <app-diretivas-atributos>
+
+  </app-diretivas-atributos>
   <router-outlet></router-outlet>`,
 })
 export class AppComponent {

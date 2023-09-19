@@ -11,6 +11,7 @@ export class DiretivasAtributosComponent {
   public altura: string = "20px"
   public nome: string = ""
   public list:Array<{nome:string}> =[{nome:"Teste1"},{nome:"teste2"}]
+  public data:Date = new Date()
 
   ngOnInit(){
     setInterval(() => {
