@@ -7,10 +7,12 @@ import { Component } from '@angular/core';
   <!-- <app-diretivas-atributos>
     <h1>Aula de Diretivas Atributos</h1>
     <hr>
-  </app-diretivas-atributos> -->
+  </app-diretivas-atributos>
    <app-diretivas-atributos>
 
-  </app-diretivas-atributos>
+  </app-diretivas-atributos>-->
+
+  <app-header></app-header>
   <router-outlet></router-outlet>`,
 })
 export class AppComponent {
