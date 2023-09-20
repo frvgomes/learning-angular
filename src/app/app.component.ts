@@ -13,10 +13,32 @@ import { Component } from '@angular/core';
   </app-diretivas-atributos>-->
 
   <app-header></app-header>
+  <app-input [contador]="addValue"></app-input>
+  <br>
+  <button (click)="add()">Soma 1</button>
+  <br>
+  <app-output (eviarDados)="setDados($event)"></app-output>
+  <ng-template [ngIf]="getDados"]>
+    <h1>{{ getDados.nome}}</h1>
+    <h1>{{ getDados.idade}}</h1>
+  </ng-template>
+
   <router-outlet></router-outlet>`,
 })
 export class AppComponent {
   title = 'learning-angular';
+
+  public addValue: number = 0;
+  public getDados:{nome:string, idade:number} | undefined
+
+  public add(){
+    this.addValue += 1
+  }
+
+  public setDados(event: {nome:string, idade:number}){
+    this.getDados = event
+  }
+
 }
 
 
